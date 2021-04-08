@@ -1,9 +1,7 @@
 ## Title: Music Exploration
 
 ## Abstract
-A max 150-word description of the project question or idea, goals, dataset used. What story you would like to tell and why? What's the motivation behind your project?
-
-In this project we aim to explore
+In this project we aim to explore music searching. How often have you wondered what song snippet belongs to what song or which artist, perhaps even what genre? This is our attempt at a shazam for natural language. We begin by exploring the relationship of lyrics and genres and the ideal x-data format (lyric or lyric-snippet) to do so. If successful, we aim to create models which accurately predict a lyrics artist. Finally, we aim to investigate whether there is a change of language in music over time by exploring relations between the ideal x-data format and year. 
 
 ## Research questions
   - How well can a model predict the genre of a song, based only on the lyrics, using supervised learning?
@@ -16,7 +14,7 @@ List the dataset(s) you want to use, and some ideas on how do you expect to get,
 
 Multilingual Lyrics for genre classification.
 
-We need to remove non-english lyrics and filter out 
+We need to remove non-english lyrics and create a general pipeline for lyrics:
 https://www.kaggle.com/mateibejan/multilingual-lyrics-for-genre-classification?select=test.csv
 
 ## A tentative list of milestones for the project
