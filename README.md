@@ -19,10 +19,10 @@ https://www.kaggle.com/mateibejan/multilingual-lyrics-for-genre-classification?s
 ## A tentative list of milestones for the project
 
   - Clean and pre-process the dataset by April 19th (Marc)
-  - Base models running by April 29th
+  - Base models running by April 29th (Ilai)
   - Create model performance reports using a standardized class by April 29th (Preda)
-  - Train the rest of the models
-  - Prepare the final report
+  - Train the rest of the models (Marc, Ilai, Preda)
+  - Prepare the final report (Marc, Ilai, Preda)
 
 ## Documentation
 This can be added as the project unfolds. You should describe, in particular, what your repo contains and how to reproduce your results.
