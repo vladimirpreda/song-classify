@@ -12,10 +12,20 @@ In this project we aim to explore music searching. How often have you wondered w
 ## Dataset
 List the dataset(s) you want to use, and some ideas on how do you expect to get, manage, process and enrich it/them. Show you've read the docs and are familiar with some examples, and you've a clear idea on what to expect. Discuss data size and format if relevant.
 
-Multilingual Lyrics for genre classification.
+Dataset:
+  https://www.kaggle.com/mateibejan/multilingual-lyrics-for-genre-classification?select=test.csv
+  Features
+    Song(str), Song Year(int), Artist(str), Genre(str), Lyrics(str) 
+   Lyrics is the whole song into one datapoint. 
+   There are about 250000 datapoints in the dataset, from those about 90% are usable (English lyrics). The format of the dataset is handy, as it is alrady organized as a CSV file type.
+Ideas:
+  Use the lyrics feature of each datapoint to predict the genre of the song. Also, this dataset can be used to create another dataset of sentences of the lyrics to both increase the size of the dataset while reducing each datapoint size. Basic preprocessing will need to be done for both datasets (the one in the link and the one we make from the links dataset), such as tokenizing, POS tagging, stemming, lemmatizing and so forth. 
+  
+ Challenges with the dataset:
+  There aren't many challenges as the data is pretty clean already. Having to create a new dataset from the already existing one will prove to be the biggest challenge, but should be simple with simple nltk functions or python functions. 
+  
 
-We need to remove non-english lyrics and create a general pipeline for lyrics:
-https://www.kaggle.com/mateibejan/multilingual-lyrics-for-genre-classification?select=test.csv
+
 
 ## A tentative list of milestones for the project
 
