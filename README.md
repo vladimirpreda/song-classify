@@ -17,7 +17,12 @@ We need to remove non-english lyrics and filter out
 https://www.kaggle.com/mateibejan/multilingual-lyrics-for-genre-classification?select=test.csv
 
 ## A tentative list of milestones for the project
-Add here a sketch of your planning for the coming weeks. Please mention who does what.
+
+  - Clean and pre-process the dataset by April 19th (Marc)
+  - Base models running by April 29th
+  - Create model performance reports using a standardized class by April 29th (Preda)
+  - Train the rest of the models
+  - Prepare the final report
 
 ## Documentation
 This can be added as the project unfolds. You should describe, in particular, what your repo contains and how to reproduce your results.
