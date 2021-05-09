@@ -1,31 +1,26 @@
-## Title: Music Exploration
+## Title: Song Recommendation System exploration between content based and collaborative filtering. 
 
 ## Abstract
-In this project we are aiming at creating our own song recommender system. There already exists a song recommendation system on Spotify, which has been proven to be succesful in increasing user satisfaction and time spent on application. We want to create a model that will take a list of songs as an input and output either a single or a list of songs that the algorithm recommends. Most importantly to note, we will be focusing on the lyrics of the song, as the intent of this project is to get more familiar with the NLP domain of machine learning. Moreover, with this recommender system, we would like to also be able to generate a new song created by the algorithm. This would be done with both the users list of songs and the recommendation songs that are given by the first model. This would prove to be an interesting idea to expand on if the model could actually create readable lyrics. 
+In this project we focus on exploring the two different approaches taken to creating recommender systems. More specifically, we will be creating a content-based recommender system and comparing its results with a collaborative based recommender. In order to execute this exploration, the use of two different datasets is necessary, as the content based recommender uses the lyrics of the songs as features, while the collaborative filtering approach uses other users behaviour as the features for deep learning. The second method is mroe widely used in large, popular recommender systems. However, it is important to explore content based filtering as we won't always have a plethora of all users information. 
 
 
 ## Research questions
-  Can one use simple NLP tools to create a valuable song recommender system? 
-  Is it easy to distinguish an AI generated lyrics to human written ones? 
+  How does content-based filtering compare to collaborative filtering for a song recommender system? 
 
 ## Dataset
-List the dataset(s) you want to use, and some ideas on how do you expect to get, manage, process and enrich it/them. Show you've read the docs and are familiar with some examples, and you've a clear idea on what to expect. Discuss data size and format if relevant.
-
-Dataset:
-  We will need two different datasets. The first dataset will be a collection of songs with their lyrics (the only feature we will be looking at). The second dataset will have both a list of songs users have listened to previously and the songs spotify has recommended them. The first dataset will be used to train and create a model to recommend songs best on their lyrics. The second dataset will be used to evaluate how accurate our training model is working compared to the spotify recommender system. 
-  
-Challenges with the dataset:
-  The challenges with these two datasets are the following. Firstly, we need to figure out the best approach to training the recommender model. Are we using semantic similarity as a sign of recommending another song? Or is there a different method that oculd yield better results? Secondly, what is the best way to evaluate if what we are recommending is actually something users will like? This is where the second dataset comes into play, however we are still wondering what the best approach is.
-  
-  
-  Maybe we should have a third dataset in order to help out with the generating of a new poem. We are not sure. 
+  Content-based recommender system 
+    https://www.kaggle.com/imuhammad/audio-features-and-lyrics-of-spotify-songs
+    This dataset contains rouhgly 15000 unique songs, in which is record has the name and lyrics of a song, including the author as some audio features that might come in handy. This dataset will allow us to use the lyrics to create Tfdf Vectors and compare similarities of songs and create user profiles. 
+   Collaborative filtering recommender system
+     There are two files that will be interesting for us.
+      The first file gives us information about user ID, song ID and the listen count. We can read it from static.turi.com/datasets/millionsong/10000.txt.
+      The second file will contain song ID, the title of that song, and artist name. We can read it fromstatic.turi.com/datasets/millionsong/song_data.csv 
+      Although this approach is not analyzing the lyrics in itself of the song, there is still NLP involved in the creation of this model. 
   
 ## A tentative list of milestones for the project
-
-  - Clean and organize datasets
-  - Preprocess the datasets (We will most likely use pre_trained Word Embeddings)
-  - Create a nearest KNN similarity model for recomendation 
-  - Have a model that generates some output of lyrisc based on the previous songs
+  - Clean datasets
+  - Create baseline model (content-based filtering using Tfidf and sparse matrix) 
+  - Create Collaborative filtering model (using playlistscreated by spotify users) 
+  - Compare the recommened songs and evaluate the models 
 
 ## Documentation
-none yet 
